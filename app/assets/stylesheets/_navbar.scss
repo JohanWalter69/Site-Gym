@@ -1,0 +1,26 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 6vh; // vh view height, donne une unité = pourcentage de la hauteur de l'écran sur lequel est affiché le site
+  padding: 9vh 0vw;
+
+  h3 {
+    margin-right: auto;
+  }
+
+  a {
+    margin-right: 5vw;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+
+    }
+
+  a:hover {
+    text-decoration: none;
+    color: #118379;
+  }
+}

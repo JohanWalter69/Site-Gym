@@ -1,0 +1,28 @@
+.top-container {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1611094607507-8c8173e5cf33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80/1600x900');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: bottom;
+  color: white;
+  height: 65vh;
+
+}
+
+.banner {
+  width: 50%;
+  margin-bottom: 5vh;
+  min-width: 500px;
+
+  h1 {
+    margin: 4% 0%;
+    font-family: initial;
+
+  }
+
+  p {
+    width: 80%;
+    margin-bottom: 4%;
+
+  }
+
+}

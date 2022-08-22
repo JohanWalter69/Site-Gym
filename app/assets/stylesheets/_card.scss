@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  width: 31%;
+  border-radius: 5px;
+  padding: 3%;
+
+  i {
+    display: flex;
+    width: 5vw;
+    height: 5vw;
+    font-size: 2.5vw;
+    color: white;
+    border-radius: 3px;
+    background-color: #118379;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  h3 {
+    font-weight: 800;
+    font-size: 1.5vw;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    height: 15%;
+  }
+
+  p {
+    color: #6d777c;
+    font-weight: 450;
+    height: 50%;
+  }
+
+  a {
+    color: #fecb56;
+    font-weight: 800;
+  }
+
+  a:hover {
+    color: #118379;
+    font-size: 20px ;
+    transition: color .3s ease-in, background-color .1s ease-in;
+  }
+
+
+}
