@@ -44,3 +44,38 @@
 
 
 }
+
+.service-card {
+  h2 {
+    padding: 3vh 0vh;
+    font-family: initial;
+    font-weight: bold;
+  }
+}
+
+.content {
+  display: flex;
+  height: 42vh;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 2vh;
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+
+  p {
+    width: 100%;
+    height: auto;
+    padding: 0vw 5vw;
+    color: #6d777c;
+    font-weight: 450;
+  }
+
+  h4 {
+    padding: 0vw 5vw;
+  }
+}
