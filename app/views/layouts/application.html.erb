@@ -15,5 +15,7 @@
   <body>
 
     <%= yield %>
+<!-- L'étape en dessous nous permet d'insérer un JS dans notre HTML. Sans ça le lien ne se fait pas.  -->
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </body>
 </html>

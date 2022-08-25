@@ -8,7 +8,7 @@
       <a href="/about" >About</a>
       <a href="/service" >Service</a>
       <a href="#" >Testimonial</a>
-      <a class = "button" href="/contact" type="" id="light-green-button">Contact</a>
+      <button class = "modal-btn button modal-trigger" id="light-green-button">Contact</button>
     </nav>
 
     <div class="banner">
@@ -22,6 +22,36 @@
 
 </div>
 
+<!-- Fenêtre modal à ouvrir  // en lien avec le bouton CONTACT-->
+<div class="modal-container">
+  <div class="overlay modal-trigger"></div>
+  <div class="modal1">
+    <button class="close-modal modal-trigger">X</button>
+    <h1>Nous contacter</h1>
+
+    <!-- ci-dessous on crée le formulaire de mise en relation -->
+    <div class="form">
+      <form action="/practice.html" method="POST">
+        <label for="Nom" required>Nom</label>
+        <input type="text" name="Nom" id="Nom">
+        <br>
+        <label for="Prénom" required>Prénom</label>
+        <input type="text" name="Prénom" id="Prénom">
+        <br>
+        <label for="mail" required>E-Mail</label>
+        <input type="text" name="E-Mail" id="E-Mail">
+        <br>
+        <label for="message" required>Message</label>
+        <textarea id="message" name="message" rows="3" cols="40">écrivez votre message ici</textarea>
+        <br>
+        <section class="submission">
+        <input type="submit" value="Envoyer">
+        </section>
+      </form>
+    </div>
+
+  </div>
+</div>
 
 <div class="contact">
   <i class="fa-brands fa-linkedin-in"></i>

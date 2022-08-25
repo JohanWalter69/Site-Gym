@@ -1,0 +1,57 @@
+.modal-container {
+  display: none; // ne s'affiche pas si la classe n'est pas active
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.modal-container.active {
+  display: block; // .active permet de faire s'afficher la page lorqu'elle est active
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+}
+
+.modal1 {
+  width: 95%;
+  max-width: 500px;
+  min-width: 300px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 40%; // permet de bien position la fenêtre
+  left: 50%;
+  transform: translate(-50%, -50%); // permet de centrer le contenu
+
+  h1 {
+    margin-bottom: 10px;
+    font-family: initial;
+    font-weight: 500;
+  }
+
+  p {
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+}
+
+.close-modal {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: #ff365e;
+  color: #fff;
+
+}

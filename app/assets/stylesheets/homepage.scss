@@ -55,3 +55,16 @@
 
   }
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-weight: 500;
+  }
+
+  #message.active {
+    display: none;
+  }
+}
