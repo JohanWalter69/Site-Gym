@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   get "contact", to: "pages#contact"
 
-  get "service", to: "pages#service"
+  get "disciplines", to: "pages#disciplines"
+
+  get "news", to: "pages#news"
 
 end

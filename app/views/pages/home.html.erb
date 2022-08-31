@@ -6,9 +6,9 @@
       <h3> YogaYuq.</h3>
       <a href="/" >Home</a>
       <a href="/about" >About</a>
-      <a href="/service" >Service</a>
-      <a href="#" >Testimonial</a>
-      <button class = "modal-btn button modal-trigger" id="light-green-button">Contact</button>
+      <a href="/disciplines" >Disciplines</a>
+      <a href="/news" >News</a>
+      <button type="button" class = "modal-btn button modal-trigger" id="light-green-button">Contact</button>
     </nav>
 
     <div class="banner">
@@ -20,37 +20,6 @@
 
   </div>
 
-</div>
-
-<!-- Fenêtre modal à ouvrir  // en lien avec le bouton CONTACT-->
-<div class="modal-container">
-  <div class="overlay modal-trigger"></div>
-  <div class="modal1">
-    <button class="close-modal modal-trigger">X</button>
-    <h1>Nous contacter</h1>
-
-    <!-- ci-dessous on crée le formulaire de mise en relation -->
-    <div class="form">
-      <form action="/practice.html" method="POST">
-        <label for="Nom" required>Nom</label>
-        <input type="text" name="Nom" id="Nom">
-        <br>
-        <label for="Prénom" required>Prénom</label>
-        <input type="text" name="Prénom" id="Prénom">
-        <br>
-        <label for="mail" required>E-Mail</label>
-        <input type="text" name="E-Mail" id="E-Mail">
-        <br>
-        <label for="message" required>Message</label>
-        <textarea id="message" name="message" rows="3" cols="40">écrivez votre message ici</textarea>
-        <br>
-        <section class="submission">
-        <input type="submit" value="Envoyer">
-        </section>
-      </form>
-    </div>
-
-  </div>
 </div>
 
 <div class="contact">
@@ -70,30 +39,31 @@
   <div class="benefits">
     <div class="card">
       <i class="fa-solid fa-people-group"></i>
-      <h3>Taughts By Experts With 10 Years Of Experience</h3>
-      <p>You will be taught by reliable instructors who have more than 10 yeats of experience in each field.</p>
-      <a href="#">Learn More</a>
+      <h3>Un encadrement avec plus de 35 ans d'expérience</h3>
+      <p>Vous serez suivis et encadrés par une personne pratiquant depuis plus de 35 ans.</p>
+      <a href="/about">En Savoir plus</a>
     </div>
     <div class="card">
       <i class="fa-solid fa-calendar-days"></i>
-      <h3>Can Schedule As You Wish</h3>
-      <p>You will be taught by reliable instructors who have more than 10 yeats of experience in each field.</p>
-      <a href="#">Learn More</a>
+      <h3>Des stages réguliers</h3>
+      <p>L'organisation de stage régulier vous permettra de vous perfectionner dans le domaine de votre choix.</p>
+      <a href="/news">En Savoir plus</a>
     </div>
     <div class="card">
       <i class="fa-solid fa-spa"></i>
-      <h3>Good Health And Body Condition</h3>
-      <p>You will be taught by reliable instructors who have more than 10 yeats of experience in each field.</p>
-      <a href="#">Learn More</a>
+      <h3>Le bien-être au coeur de l'enseignement</h3>
+      <p>Pratiquante de gym douce, de do-in, de reiki et à l'écoute de ses élèves, Véronique place le bien-être et la sagesse au coeur de son enseignement.</p>
+      <a href="/disciplines">En Savoir plus</a>
     </div>
   </div>
 
   <div class="bottom-page">
     <%=image_tag('gym-image.jpg') %>
     <div class="text">
-      <h3>We Will Help You To Be Healthy Spiritually And Physically</h3>
-      <p>We believe sunshine is one of humanity's most valuable, yet underutilised ressources. Not only can solar energy sustainably power hospitals</p>
-      <a class="button" href="#" id="dark-green-button">Learn More</a>
+      <h3>Vous serez accompagnés dans l'atteinte de l'équilibre corps et esprit</h3>
+      <p>Le lien entre le corps et l'esprit est très important pour avoir une vie équilibrée et se sentir bien.</p>
+      <br>
+      <a class="button" href="/disciplines" id="dark-green-button">En Savoir Plus</a>
     </div>
 
   </div>

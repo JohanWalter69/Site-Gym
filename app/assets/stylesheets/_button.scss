@@ -7,6 +7,16 @@
   font-weight: 700;
 }
 
+#small-light-green-button {
+  padding: 1vh 2vw;
+  border-radius: 3px;
+  background-color: #1aae91;
+  color: white;
+  border: none;
+  font-weight: auto;
+}
+
+
 #clear-button {
   padding: 2vh 2vw;
   border-radius: 3px;
@@ -35,6 +45,6 @@
 }
 
 .button:hover {
-  font-size: 25px ;
-  transition: color .3s ease-in, background-color .1s ease-in;
+  font-size: 20px ;
+  transition: color .1s ease-out, background-color .1s ease-out;
 }

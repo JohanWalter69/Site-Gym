@@ -8,6 +8,9 @@ class PagesController < ApplicationController
   def contact
   end
 
-  def service
+  def disciplines
+  end
+
+  def news
   end
 end
