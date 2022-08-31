@@ -1,3 +1,9 @@
+<ul>
+  <% @stages.each do |stage| %>
+    <li><%= stage.title %></li>
+  <% end %>
+</ul>
+
 <nav class="dark-navbar">
   <h3> YogaYuq.</h3>
   <a href="/" >Home</a>
@@ -8,6 +14,25 @@
 </nav>
 
 <div class="container">
+
+
+  <h2>Nos stages</h2>
+  <div class="card2">
+    <% @stages.each do |stage| %>
+      <div class="content">
+        <%=image_tag('news-gym.jpg') %>
+        <div class="description">
+          <h2><%= stage.title %></h2>
+          <i class="fa-solid fa-calendar-days">  <%= stage.date %></i>
+          <br>
+          <i class="fa-solid fa-people-group">  <%= stage.participants %> places</i>
+          <br>
+          <p><%= stage.description %></p>
+          <button class = "modal-btn button modal-trigger" id="small-light-green-button">Contact</button>
+        </div>
+      </div>
+    <% end %>
+  </div>
 
   <div class="card2">
     <h2>Nos stages</h2>
@@ -24,5 +49,4 @@
       </div>
     </div>
   </div>
-
 </div>

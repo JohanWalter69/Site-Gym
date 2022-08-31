@@ -9,4 +9,6 @@ Rails.application.routes.draw do
 
   get "news", to: "pages#news"
 
+  get "stages", to: "stages#index"
+
 end
