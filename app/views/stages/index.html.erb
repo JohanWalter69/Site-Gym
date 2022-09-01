@@ -1,8 +1,9 @@
+<!-- Ci-dessous fonction Ruby qui permet de venir chercher les informations dans notre base de donnée//voir dans le corps de l'HTML ci-dessous
 <ul>
   <% @stages.each do |stage| %>
     <li><%= stage.title %></li>
   <% end %>
-</ul>
+</ul> -->
 
 <nav class="dark-navbar">
   <h3> YogaYuq.</h3>
@@ -11,13 +12,14 @@
   <a href="/disciplines" >Disciplines</a>
   <a href="/stages" >News</a>
   <button class = "modal-btn button modal-trigger" id="light-green-button">Contact</button>
+  <a href="/stages/new" >Add</a>
+
 </nav>
 
 <div class="container">
 
-
-  <h2>Nos stages</h2>
   <div class="card2">
+    <h2>Les Stages Du Moment</h2>
     <% @stages.each do |stage| %>
       <div class="content">
         <%=image_tag('news-gym.jpg') %>
@@ -29,24 +31,14 @@
           <br>
           <p><%= stage.description %></p>
           <button class = "modal-btn button modal-trigger" id="small-light-green-button">Contact</button>
+
+          <%= link_to "Delete", stage_path(stage.id),
+          data: {turbo_method: :delete, turbo_confirm: "Etes-vous sur de vouloir supprimer cet article?"}
+          %>
+
         </div>
       </div>
     <% end %>
   </div>
 
-  <div class="card2">
-    <h2>Nos stages</h2>
-    <div class="content">
-      <%=image_tag('news-gym.jpg') %>
-      <div class="description">
-        <h2>Stage de Do-In</h2>
-        <i class="fa-solid fa-calendar-days">  Du 15/09 au 20/09</i>
-        <br>
-        <i class="fa-solid fa-people-group">  15 places</i>
-        <br>
-        <p>Description du stage. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda harum nisi facere ducimus reprehenderit at vitae vero. Incidunt numquam asperiores quo laborum vitae voluptatum? Voluptatem sint inventore aliquam facilis suscipit.</p>
-        <button class = "modal-btn button modal-trigger" id="small-light-green-button">Contact</button>
-      </div>
-    </div>
-  </div>
 </div>
