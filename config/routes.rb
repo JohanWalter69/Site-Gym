@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get "stages", to: "stages#index"
 
+  get "admin", to: "stages#admin"
+
   get "stages/new", to: "stages#new"
 
   post "stages", to: "stages#create"

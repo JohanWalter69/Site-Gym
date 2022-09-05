@@ -18,7 +18,7 @@
 
  <div class="card2">
     <h2>Les Stages Du Moment</h2>
-    <!-- <a class= "edit" href="/stages/new" >Ajouter un article</a> -->
+    <a class= "edit" href="/stages/new" >Ajouter un article</a>
 
 
     <% @stages.each do |stage| %>
@@ -38,13 +38,13 @@
         </div>
 
         <div>
-          <!-- <%= link_to "Supprimer", stage_path(stage.id), class: "edit",
+          <%= link_to "Supprimer", stage_path(stage.id), class: "edit",
           data: {turbo_method: :delete, turbo_confirm: "Etes-vous sur de vouloir supprimer cet article?"}
           %>
 
           <%= link_to "Modifier", stage_edit_path(stage.id), class: "edit",
           data: {turbo_method: :edit}
-          %> -->
+          %>
 
         </div>
 

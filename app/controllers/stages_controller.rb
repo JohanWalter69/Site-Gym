@@ -3,6 +3,10 @@ class StagesController < ApplicationController
     @stages = Stage.all
   end
 
+  def admin
+    @stages = Stage.all
+  end
+
   def new
     @stage = Stage.new
   end
@@ -29,7 +33,7 @@ class StagesController < ApplicationController
 
     redirect_to stages_path(@stages)
 
-    end
+  end
 
   def destroy
     @stage = Stage.find(params[:id])
