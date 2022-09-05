@@ -19,12 +19,25 @@ class StagesController < ApplicationController
     @stage = Stage.find(params[:id])
   end
 
+  def edit
+    @stage = Stage.find(params[:id])
+  end
+
+  def update
+    @stage = Stage.find(params[:id])
+    @stage.update(stage_params)
+
+    redirect_to stages_path(@stages)
+
+    end
+
   def destroy
     @stage = Stage.find(params[:id])
     @stage.destroy
 
     redirect_to stages_path(@stages)
   end
+
 
 
   private

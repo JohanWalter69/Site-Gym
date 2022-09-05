@@ -1,0 +1,15 @@
+<%= form_with model: @stage do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :date %>
+  <%= f.date_field :date %>
+  <%= f.label :participants %>
+  <%= f.number_field :participants %>
+  <%= f.label :price %>
+  <%= f.text_field :price %>
+  <%= f.label :place %>
+  <%= f.text_field :place %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.submit %>
+<% end %>

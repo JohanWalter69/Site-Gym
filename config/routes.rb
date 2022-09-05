@@ -19,4 +19,9 @@ Rails.application.routes.draw do
 
   delete "stages/:id", to: "stages#destroy"
 
+  get "stages/:id/edit", to: "stages#edit", as: :stage_edit
+
+  patch "stages/:id", to: "stages#update"
+
+
 end

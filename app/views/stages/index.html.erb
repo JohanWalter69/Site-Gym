@@ -12,14 +12,15 @@
   <a href="/disciplines" >Disciplines</a>
   <a href="/stages" >News</a>
   <button class = "modal-btn button modal-trigger" id="light-green-button">Contact</button>
-  <a href="/stages/new" >Add</a>
-
 </nav>
 
 <div class="container">
 
-  <div class="card2">
+ <div class="card2">
     <h2>Les Stages Du Moment</h2>
+    <a class= "edit" href="/stages/new" >Ajouter un article</a>
+
+
     <% @stages.each do |stage| %>
       <div class="content">
         <%=image_tag('news-gym.jpg') %>
@@ -29,14 +30,24 @@
           <br>
           <i class="fa-solid fa-people-group">  <%= stage.participants %> places</i>
           <br>
+          <i class="fa-solid fa-euro-sign">  <%= stage.price %></i>
+          <br>
           <p><%= stage.description %></p>
           <button class = "modal-btn button modal-trigger" id="small-light-green-button">Contact</button>
 
-          <%= link_to "Delete", stage_path(stage.id),
+        </div>
+
+        <div>
+          <%= link_to "Supprimer", stage_path(stage.id), class: "edit",
           data: {turbo_method: :delete, turbo_confirm: "Etes-vous sur de vouloir supprimer cet article?"}
           %>
 
+          <%= link_to "Modifier", stage_edit_path(stage.id), class: "edit",
+          data: {turbo_method: :edit}
+          %>
+
         </div>
+
       </div>
     <% end %>
   </div>
