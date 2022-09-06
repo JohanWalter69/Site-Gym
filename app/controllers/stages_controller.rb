@@ -1,4 +1,5 @@
 class StagesController < ApplicationController
+  before_action :authenticate_user!, only: :admin
   def index
     @stages = Stage.all
   end
